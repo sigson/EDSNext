@@ -1,3 +1,10 @@
+# EDS Next
+
+EDS Lite fork for research purposes.
+
+<details>
+<summary>Original EDS Lite Readme</summary>
+
 # EDS Lite
 
 EDS (Encrypted Data Store) is a virtual disk encryption software for Android which allows you to store your files in an encrypted container. EDS Lite is an open source edition of EDS. Visit [EDS web site](https://sovworks.com/eds/) to learn about EDS features and capabilities.
@@ -14,6 +21,6 @@ Download and extract [NDK v13b](https://developer.android.com/ndk/downloads/olde
 
 GPLv2+
 
-
+</details>
 
 
