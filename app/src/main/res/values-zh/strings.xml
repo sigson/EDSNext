@@ -87,6 +87,9 @@
 	<string name="path">路径</string>
 	<string name="always_force_close_containers">总是强制关闭容器</string>
 	<string name="show_previews">在文件管理器中显示预览</string>
+	<string name="enable_ftp_sharing">Enable FTP access to containers</string>
+	<string name="ftp_url">FTP access url inf format ip.ip.ip.ip:port</string>
+	<string name="ftp_credentials">FTP access credential in format userlogin@password</string>
 	<string name="open_read_only">以只读模式打开</string>
 	<string name="disable_wide_screen_layouts">禁用横向布局</string>
 	<string name="close_all_containers">关闭所有<xliff:g id="program_name">EDS</xliff:g> 容器</string>

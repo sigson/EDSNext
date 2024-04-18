@@ -105,7 +105,22 @@ public class DefaultSettingsCommon implements SettingsCommon
 	{		
 		return true;
 	}
-	
+
+	@Override
+	public boolean isEnabledFTP() {
+		return false;
+	}
+
+	@Override
+	public String getFTP_URL() {
+		return "127.0.0.1:2223";
+	}
+
+	@Override
+	public String getFTPCred() {
+		return "user@password";
+	}
+
 	@Override
 	public String getExtensionsMimeMapString()
 	{

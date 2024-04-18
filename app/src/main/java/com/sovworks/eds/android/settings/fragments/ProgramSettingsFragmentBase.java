@@ -19,6 +19,7 @@ import com.sovworks.eds.android.settings.IntPropertyEditor;
 import com.sovworks.eds.android.settings.MultilineTextPropertyEditor;
 import com.sovworks.eds.android.settings.PathPropertyEditor;
 import com.sovworks.eds.android.settings.SwitchPropertyEditor;
+import com.sovworks.eds.android.settings.TextPropertyEditor;
 import com.sovworks.eds.android.settings.UserSettings;
 import com.sovworks.eds.android.settings.program.ExtFileManagerPropertyEditor;
 import com.sovworks.eds.android.settings.program.InstallExFatModulePropertyEditor;
@@ -37,8 +38,11 @@ import static com.sovworks.eds.android.settings.UserSettingsCommon.DISABLE_DEBUG
 import static com.sovworks.eds.android.settings.UserSettingsCommon.DISABLE_MODIFIED_FILES_BACKUP;
 import static com.sovworks.eds.android.settings.UserSettingsCommon.DISABLE_WIDE_SCREEN_LAYOUTS;
 import static com.sovworks.eds.android.settings.UserSettingsCommon.DONT_USE_CONTENT_PROVIDER;
+import static com.sovworks.eds.android.settings.UserSettingsCommon.FTP_CREDENTIALS;
+import static com.sovworks.eds.android.settings.UserSettingsCommon.FTP_ENABLED;
 import static com.sovworks.eds.android.settings.UserSettingsCommon.EXTENSIONS_MIME;
 import static com.sovworks.eds.android.settings.UserSettingsCommon.FORCE_TEMP_FILES;
+import static com.sovworks.eds.android.settings.UserSettingsCommon.FTP_URL;
 import static com.sovworks.eds.android.settings.UserSettingsCommon.IS_FLAG_SECURE_ENABLED;
 import static com.sovworks.eds.android.settings.UserSettingsCommon.MAX_FILE_SIZE_TO_OPEN;
 import static com.sovworks.eds.android.settings.UserSettingsCommon.NEVER_SAVE_HISTORY;
@@ -49,7 +53,7 @@ import static com.sovworks.eds.android.settings.UserSettingsCommon.WIPE_TEMP_FIL
 import static com.sovworks.eds.android.settings.UserSettingsCommon.WORK_DIR;
 import static com.sovworks.eds.settings.SettingsCommon.THEME_DARK;
 import static com.sovworks.eds.settings.SettingsCommon.THEME_DEFAULT;
-
+//base program settings
 public abstract class ProgramSettingsFragmentBase extends PropertiesFragmentBase implements MasterPasswordDialog.PasswordReceiver
 {
     @Override
@@ -170,6 +174,54 @@ public abstract class ProgramSettingsFragmentBase extends PropertiesFragmentBase
                 editSettings().putBoolean(SHOW_PREVIEWS, value).commit();
             }
         }));
+
+        commonPropertiesIds.add(getPropertiesView().addProperty(new SwitchPropertyEditor(this, R.string.enable_ftp_sharing, 0)
+        {
+            @Override
+            protected boolean loadValue()
+            {
+                return _settings.isEnabledFTP();
+            }
+
+            @Override
+            protected void saveValue(boolean value)
+            {
+                editSettings().putBoolean(FTP_ENABLED, value).commit();
+            }
+        }));
+
+
+        commonPropertiesIds.add(getPropertiesView().addProperty(new TextPropertyEditor(this, R.string.ftp_url, 0, getTag())
+        {
+            @Override
+            protected String loadText()
+            {
+                return _settings.getFTP_URL();
+            }
+
+            @Override
+            protected void saveText(String text) throws Exception
+            {
+                editSettings().putString(FTP_URL, text).commit();
+            }
+        }));
+
+        commonPropertiesIds.add(getPropertiesView().addProperty(new TextPropertyEditor(this, R.string.ftp_credentials, 0, getTag())
+        {
+            @Override
+            protected String loadText()
+            {
+                return _settings.getFTPCred();
+            }
+
+            @Override
+            protected void saveText(String text) throws Exception
+            {
+                editSettings().putString(FTP_CREDENTIALS, text).commit();
+            }
+        }));
+
+
         commonPropertiesIds.add(getPropertiesView().addProperty(new SwitchPropertyEditor(this, R.string.disable_wide_screen_layouts, R.string.disable_wide_screen_layouts_desc)
         {
             @Override

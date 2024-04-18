@@ -129,6 +129,9 @@ public interface SettingsCommon
 	int getMaxTempFileSize();
 	boolean wipeTempFiles();
 	boolean showPreviews();
+	boolean isEnabledFTP();
+	String getFTP_URL();
+	String getFTPCred();
 	String getWorkDir();
 	String getExtensionsMimeMapString();
 	int getLastViewedPromoVersion();

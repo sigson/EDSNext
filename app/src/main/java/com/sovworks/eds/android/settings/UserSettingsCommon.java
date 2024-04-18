@@ -26,6 +26,9 @@ public abstract class UserSettingsCommon implements SettingsCommon
 	public static final String MAX_FILE_SIZE_TO_OPEN = "max_file_size_to_open";
 	public static final String WIPE_TEMP_FILES = "wipe_temp_files";
 	public static final String SHOW_PREVIEWS = "show_previews";
+	public static final String FTP_ENABLED = "enable_ftp_sharing";
+	public static final String FTP_URL = "ftp_url";
+	public static final String FTP_CREDENTIALS = "ftp_credentials";
 	public static final String WORK_DIR = "work_dir";
 	public static final String LAST_VIEWED_CHANGES = "last_viewed_changes";
 	public static final String USE_INTERNAL_IMAGE_VIEWER = "use_internal_image_viewer";
@@ -130,6 +133,24 @@ public abstract class UserSettingsCommon implements SettingsCommon
 	public boolean showPreviews()
 	{		
 		return _prefs.getBoolean(SHOW_PREVIEWS, _defaultSettings.showPreviews());
+	}
+
+	@Override
+	public boolean isEnabledFTP()
+	{
+		return _prefs.getBoolean(FTP_ENABLED, _defaultSettings.isEnabledFTP());
+	}
+
+	@Override
+	public String getFTP_URL()
+	{
+		return _prefs.getString(FTP_URL, _defaultSettings.getFTP_URL());
+	}
+
+	@Override
+	public String getFTPCred()
+	{
+		return _prefs.getString(FTP_CREDENTIALS, _defaultSettings.getFTPCred());
 	}
 	
 	@Override

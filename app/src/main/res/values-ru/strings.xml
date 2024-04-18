@@ -85,6 +85,9 @@
   <string name="path">Путь</string>
   <string name="always_force_close_containers">Всегда принудительно закрывать контейнеры</string>
   <string name="show_previews">Показывать миниатюры в менеджере файлов</string>
+  <string name="enable_ftp_sharing">Enable FTP access to containers</string>
+  <string name="ftp_url">FTP access url inf format ip.ip.ip.ip:port</string>
+  <string name="ftp_credentials">FTP access credential in format userlogin@password</string>
   <string name="open_read_only">Открыть только для чтения</string>
   <string name="disable_wide_screen_layouts">Отключить портретный режим</string>
   <string name="close_all_containers">Закрыть все контейнеры EDS</string>

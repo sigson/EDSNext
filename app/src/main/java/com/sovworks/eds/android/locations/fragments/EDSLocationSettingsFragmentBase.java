@@ -36,6 +36,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
+//settings container layouts
 public abstract class EDSLocationSettingsFragmentBase extends PropertiesFragmentBase implements LocationOpenerBaseFragment.LocationOpenerResultReceiver, PropertiesHostWithLocation, PasswordDialog.PasswordReceiver
 {
     public static class LocationInfo

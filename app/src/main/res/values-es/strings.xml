@@ -85,6 +85,9 @@
   <string name="path">Ruta</string>
   <string name="always_force_close_containers">Forzar siempre el cerrado de los contenedores</string>
   <string name="show_previews">Mostrar vistas previas en el gestor de ficheros</string>
+  <string name="enable_ftp_sharing">Enable FTP access to containers</string>
+  <string name="ftp_url">FTP access url inf format ip.ip.ip.ip:port</string>
+  <string name="ftp_credentials">FTP access credential in format userlogin@password</string>
   <string name="open_read_only">Abrir en modo sólo lectura</string>
   <string name="disable_wide_screen_layouts">Desactivar el modo apaisado</string>
   <string name="close_all_containers">Cerrar todos los contenedores EDS</string>
