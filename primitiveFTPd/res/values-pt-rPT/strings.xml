@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="ifacesLabel">Interface de Rede</string>
+    <string name="ipAddrLabel">Endereço IP</string>
+    <string name="ifacesError">Erro:</string>
+    <string name="protocolLabel">Protocolo</string>
+    <string name="portLabel">Porta</string>
+    <string name="generateKeysMessage">Gerar chaves ?</string>
+    <string name="generatingKeysMessage">A Gerar Chaves …</string>
+    <string name="generate">Gerar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="state">Estado</string>
+    <string name="serverStarted">A correr …</string>
+    <string name="serverStopped">Parado</string>
+    <string name="permissionRequired">A permissão \"%1$s\" é necessária para o funcionamento da aplicação!</string>
+    <string name="permissionNameStorage">Armazenamento</string>
+    <string name="quickSettingsServerStarted">pFTPd A Correr …</string>
+    <string name="quickSettingsServerStopped">pFTPd Parado</string>
+    <string name="saveAs">Guardar como</string>
+
+    <string name="startService">Iniciar Servidor</string>
+    <string name="stopService">Parar Servidor</string>
+    <string name="toggleService">Iniciar ou Parar o Servidor</string>
+    <string name="notificationTitle">Servidor FTP</string>
+
+    <string name="haveToSetPassword">Primeiro defina uma password</string>
+    <string name="serverRunning">O Servidor FTP está a correr</string>
+    <string name="serverCouldNotBeStarted">O Servidor FTP não pôde ser iniciado! Mensagem de erro:</string>
+    <string name="portInvalid_v2">O valor da porta é inválido. Deve ser entre 1024 e 64000.</string>
+    <string name="portsEqual_v2">As portas são iguais. Isto não vai funcionar.</string>
+    <string name="restartServer">Necessita de reiniciar o Servidor para as alterações tomarem efeito.</string>
+    <string name="invalidDir">O directório não é válido.</string>
+    <string name="prefs">Definições</string>
+    <string name="prefCategoryTitle">Definições do Servidor FTP</string>
+    <string name="prefTitleUser">Nome de Utilizador</string>
+    <string name="prefSummaryUser">Nome de utilizador do servidor FTP</string>
+    <string name="prefTitlePassword">Palavra-Passe</string>
+    <string name="prefSummaryPassword">Palavra-Passe do servidor FTP</string>
+    <string name="prefTitlePort">Porta</string>
+    <string name="prefSummaryPort">Porta do servidor FTP</string>
+    <string name="prefTitlePortSecure">Porta Segura</string>
+    <string name="prefSummaryPortSecure">Porta do servidor FTP (encriptada)</string>
+    <string name="prefTitleStartDir">Directório de Arranque do Servidor</string>
+    <string name="prefSummaryStartDir">Primeiro diretório após inicio de sessão</string>
+    <string name="prefTitleAnnounce">Anunciar o servidor na rede LAN</string>
+    <string name="prefTitleAnnounceName">Nome do servidor</string>
+    <string name="prefSummaryAnnounceName">Nome usado para anunciar o servidor.</string>
+    <string name="prefTitleWakelock">Prevenir Standby</string>
+    <string name="prefSummaryWakelock">Previne o Standby enquanto o servidor estiver a correr. Standby pode fazer com que uploads/downloads sejam interrompidos.</string>
+    <string name="prefTitleWhichServerToStart">Servidor(es) a arrancar</string>
+    <string name="prefSummaryWhichServerToStart">Escolher se arranca apenas o servidor FTP, o servidor SFTP, ou ambos.</string>
+    <string name="prefTitleStartOnBoot">Iniciar no arranque</string>
+    <string name="prefSummaryStartOnBoot">Arrancar o servidor com o arranque do sistema.</string>
+    <string name="prefTitleStartOnOpen">Arrancar ao abrir</string>
+    <string name="prefSummaryStartOnOpen">Arrancar o servidor quando a aplicação é aberta.</string>
+    <string name="prefTitlePubKeyAuth">"Chave de Autenticação Pública "</string>
+    <string name="prefSummaryPubKeyAuth">Quando activado coloque a chave pública ssh2 em %s. SFTP apenas.</string>
+    <string name="prefTitleAnonymousLogin">Autenticação Anónima</string>
+    <string name="prefSummaryAnonymousLogin">Ativar se autenticação anónima é permitida no servidor.</string>
+    <string name="prefTitleFtpPassivePorts">Portas Passivas FTP</string>
+    <string name="app_name">ftpd primitivo</string>
+    <string name="fingerprintsLabel">Impressões Digitais da Chave</string>
+    <string name="translate">Traduza</string>
+
+    <string name="haveToSetAuthMechanism">Necessita de seleccionar um mecanismo de autenticação primeiro</string>
+    <string name="couldNotReadKeyAuthKey">A chave pública para autenticação de chaves não pôde ser lida. Verifique os registos (logs).</string>
+    <string name="ftpPassivePortsInvalid">O valor das Portas Passivas FTP é inválido.</string>
+
+    <string name="prefsCategoryTitleAuth">Aut</string>
+    <string name="prefsCategoryTitleConnectivity">Conectividade</string>
+    <string name="prefsCategoryTitleUi">IU</string>
+    <string name="prefsCategoryTitleSystem">Sistema</string>
+    <string name="prefSummaryAnnounce">Anuncia o servidor FTP na LAN via DNS-SD (Bonjour). Pode causar crashes em alguns dispositivos.</string>
+    <string name="prefTitleShowConnectionInfoInNotification">Mostra informações da ligação na notificação</string>
+    <string name="prefSummaryShowConnectionInfoInNotification">Mostra informações da ligação como endereço IP na notificação.</string>
+    <string name="prefTitleShowStartStopNotification">Mostrar notificação para arrancar/parar servidor(es)</string>
+    <string name="prefSummaryShowStartStopNotification">Mostra uma notificação a todo o tempo para ter mais uma forma rápida de arrancar/parar o(s) servidor(es).</string>
+    <string name="prefSummaryFtpPassivePorts">Portas para ligações FTP passivas. Pode ser apenas uma porta, uma lista ou entre dois valores. Ex. 5678,5700-5710,5800,5900.</string>
+    <string name="prefTitleIdleTimeout">Tempo de servidor inactivo para expirar</string>
+    <string name="prefSummaryIdleTimeout">O servidor irá terminar as ligações inactivas após este tempo em segundos (apenas FTP)</string>
+    <string name="prefSummaryIdleTimeoutV2">O servidor irá terminar as ligações inactivas após este tempo, em segundos. Definir para 0 para desactivar.</string>
+    <string name="prefTitleLogging">Registo</string>
+    <string name="prefSummaryLogging">O registo serve uma análise de erros. Se a aplicação não funcionar correctamente no seu dispositivo, pode enviar o registo para os desenvolvedores. Pode obrigar a um reinicio da aplicação.</string>
+
+    <string name="licence">Licença</string>
+    <string name="reset">Reset</string>
+
+    <string name="widgetTextStart">Iniciar (s)ftpd</string>
+    <string name="widgetTextStop">Parar (s)ftpd</string>
+    <string name="isAnonymous">Login Anónimo: %1$b</string>
+    <string name="selectServerAction">Acção de Seleccionar o Servidor</string>
+    <string name="isServerRunning">O servidor está a correr?</string>
+
+    <string name="storageType">Tipo de Armazenamento</string>
+    <string name="storageTypePlain">Sistema de ficheiros antigo</string>
+    <string name="storageTypeRoot">Super user (o dispositivo deve estar rooteado)</string>
+    <string name="storageTypeSaf">Framework de Acesso ao Armazenamento Android (SAF)
+\n(Ex. para um cartão SD)</string>
+    <string name="storageTypeRoSaf">SAF de leitura apenas (mais rápido!)</string>
+    <string name="safExplainHeading">Como funciona o SAF</string>
+    <string name="safExplain">O Android vai pedir-lhe para escolher um diretório. O tal estará acessivel através do(s) servidore(s). De tempo a tempo a permissão pode ser revogada e deverá re-selecionar.</string>
+    <string name="selectedSafUri">URI da SAF Selecionada:</string>
+
+    <string name="startServerAndExit">Arrancar apenas o servidor</string>
+    <string name="startServerAndUi">Arrancar com o servidor</string>
+
+    </resources>
